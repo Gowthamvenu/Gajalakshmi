@@ -1,0 +1,15 @@
+.swag-line{
+			content: '';
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 2px;
+			z-index: 2;
+			background-color: #ac2aa1;
+			background: -webkit-linear-gradient(45deg, #6b15a1, #ac2aa1);
+			background: linear-gradient(45deg, #6b15a1, #ac2aa1);
+		}
+		
+		
