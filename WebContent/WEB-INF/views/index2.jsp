@@ -96,7 +96,7 @@
 		
 			<div class="parallax1">
 				<div class="caption">
-					<span class="border">HAI GAJALAKSHMI HANDLOOMS</span>
+					<span class="border">GAJALAKSHMI HANDLOOMS</span>
 				</div>
 			</div>
 			<div class="pbw" style="background-color:#fff;">
