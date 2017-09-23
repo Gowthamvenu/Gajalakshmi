@@ -8,23 +8,23 @@ var app=angular.module('GLH',['ngRoute']);
 
 			// route for the home page
 			.when('/', {
-				templateUrl : '/index.jsp',
+				templateUrl : '~/pages/index2.jsp',
 				controller  : 'indexController'
 			})
 			//route for product page
 			.when('/products',{
-				templateUrl : '/products.jsp',
+				templateUrl : '/resources/pages/products.jsp',
 				controller  : 'productController'
 			})
 			// route for the about page
 			.when('/locate', {
-				templateUrl : '/locate.jsp',
+				templateUrl : '/resources/pages/locate.jsp',
 				controller  : 'locateController'
 			})
 
 			// route for the contact page
 			.when('/contact', {
-				templateUrl : '/contact.jsp',
+				templateUrl : '/resources/pages/contact.jsp',
 				controller  : 'contactController'
 			})
 			.otherwise({ redirectTo: '/' });
