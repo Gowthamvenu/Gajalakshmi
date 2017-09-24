@@ -1,14 +1,13 @@
 var app=angular.module('GLH',['ngRoute']);
 
-	alert("hai");
-	// configure our routes
+	/*// configure our routes
 	app.config(function($routeProvider,$locationProvider) {
 		$locationProvider.hashPrefix('');
 		$routeProvider
 
 			// route for the home page
 			.when('/', {
-				templateUrl : '~/pages/index2.jsp',
+				templateUrl : 'views/locate.jsp',
 				controller  : 'indexController'
 			})
 			//route for product page
@@ -28,20 +27,20 @@ var app=angular.module('GLH',['ngRoute']);
 				controller  : 'contactController'
 			})
 			.otherwise({ redirectTo: '/' });
-	});
+	});*/
 
-	app.controller('mainController',function($scope){
-		alert("main controller");
-	});
+	/*app.controller('mainController',function($scope){
+		console.log("main controller");
+	});*/
 	app.controller('indexController',function($scope){
-		alert("index controller");
+		console.log("index controller");
 	});
 	app.controller('productController',function($scope){
-		alert("product controller");
+		console.log("product controller");
 	});
 	app.controller('locateController',function($scope){
-		alert("location controller");
+		console.log("location controller");
 	});
 	app.controller('contactController',function($scope){
-		alert("contact controller");
+		console.log("contact controller");
 	});

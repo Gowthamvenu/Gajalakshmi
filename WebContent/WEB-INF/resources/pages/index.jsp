@@ -113,7 +113,7 @@
 
 <body>
 
-	<div class="container-fluid text-center" ng-controller="contactController">
+	<div class="container-fluid text-center" ng-controller="indexController">
 				<nav class="navbar navbar-inverse navbar-fixed-top" align="center;">
 				  <div class="container" >
 					<div class="navbar-header">
@@ -141,23 +141,160 @@
 				</nav>
 			</div>
 	
+			<!-- <div ng-view >
+				
+				</div> 
+
+<br><br><br><br><br> -->
 
 <!-- view goes here -->
-			<div class="container-fluid text-center visible-sm visible-md visible-lg" style="margin-top:8%;">
-				<div class="panel panel-default" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
-					<div class="panel-body">
-					CONTACT ME!!..
-					</div>
+<style>
+	
+	
+	.navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    
+	.panel-footer{
+		padding: 18px 25px;
+		background-color: #303132;
+		text-align: center;
+		color: white;
+		width:298px;
+		overflow: hidden;
+	}
+	
+	.panel{
+		width: 298px;
+		height: 410px;
+		object-fit: cover;
+		border: 0;
+	}
+	.panel-body{
+		padding: 0px;
+		object-fit: cover;
+		position: relative;
+		border: 1px solid #333;
+		overflow: hidden;
+		width: 100%;
+		height: 353px;
+		 
+	}
+	.panel-body img {
+	  max-width: 100%;
+	  height: 353px;
+	  position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	  -moz-transition: all 0.2s ease-in-out;
+	  -webkit-transition: all 0.2s ease-in-out;
+	  transition: all 0.2s ease-in-out;
+	 
+	}
+	.panel-body:hover img {
+	  -moz-transform: scale(1.3);
+	  -webkit-transform: scale(1.3);
+	  transform: scale(1.3);
+	  
+	}
+	.img-hover img {
+		-webkit-transition: all .2s ease-in-out; /* Safari and Chrome */
+		-moz-transition: all .2s ease-in-out; /* Firefox */
+		-o-transition: all .2s ease-in-out; /* IE 9 */
+		-ms-transition: all .2s ease-in-out; /* Opera */
+		transition: all .2s ease-in-out;
+	}
+	body { padding-top: 88px; 
+		
+	}
+	.shipping{
+		letter-spacing:0.3em;
+		width: 100%;
+		background-color: rgba(211, 211, 211, 0.6);
+		font: normal normal normal 13px/1.4em raleway,sans-serif;
+		height: 40px;
+		display:-moz-box;
+		-moz-box-pack:center;
+		-moz-box-align:center;
+	}
+	@media (max-width: 767px) {
+		body { 
+			padding-top: 50px; 
+		}
+	}
+	
+	
+	</style>
+<div class="shipping "><span  style="letter-spacing:0.3em;"  align="center">SHIPPING WORLDWIDE</span></div>
+<div class="container-fluid text-center" >
+					
+					<h6 style="letter-spacing: 10.8000001907349px;font-family: times new roman,times,serif;font-size: 36px;"><b>YEAR ROUND</b></h6>
+					<span><hr width="5%" style="background-color: red; height: 1px; border: 0;"></span>
+					<p style="letter-spacing: 5.69999980926514px;font-family: times new roman,times,serif;font-size: 19px;">Must Have Items</p>
+					</br>
 				</div>
-			</div>
-			<div class="container-fluid text-center visible-xs" style="margin-top:18%;">
-				<div class="panel panel-default" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
-					<div class="panel-body ">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d979.974088416095!2d76.398022!3d10.74247100000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf6016a4593e2d332!2sGajalakshmi+Handlooms!5e0!3m2!1sen!2sin!4v1491655265765" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+				<div class="container" align="center">    
+				  <div class="row">
+					<div class="col-sm-4">
+					  <div class="panel ">
+						<!-- <div class="panel-heading">BLACK FRIDAY DEAL</div> -->
+						<div class="panel-body img-hover"><img src="<c:url value="/resources/images/img1.jpg" />" class="img-responsive" style="width:100%;" alt="Image"></div>
+						<div class="panel-footer">KASAVU SAREE</div>
+					  </div>
 					</div>
-				</div>
-			</div>
-			</br>
+					<div class="col-sm-4"> 
+					  <div class="panel">
+						<!-- <div class="panel-heading">BLACK FRIDAY DEAL</div> -->
+						<div class="panel-body"><img src="<c:url value="/resources/images/img2.jpg" />" class="img-responsive" style="width:100%" alt="Image"></div>
+						<div class="panel-footer">DHOTHI</div>
+					  </div>
+					</div>
+					<div class="col-sm-4"> 
+					  <div class="panel">
+						<!-- <div class="panel-heading">BLACK FRIDAY DEAL</div> -->
+						<div class="panel-body"><img src="<c:url value="/resources/images/img1.jpg" />" class="img-responsive" style="width:100%" alt="Image"></div>
+						<div class="panel-footer">SET DHOTHI</div>
+					  </div>
+					</div>
+				  </div>
+				</div><br>
+
+				<div class="container" align="center">    
+				  <div class="row">
+					<div class="col-sm-4">
+					  <div class="panel panel-primary">
+						<!-- <div class="panel-heading">BLACK FRIDAY DEAL</div> -->
+						<div class="panel-body"><img src="<c:url value="/resources/images/img2.jpg" />" class="img-responsive" style="width:100%" alt="Image"></div>
+						<div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+					  </div>
+					</div>
+					<div class="col-sm-4"> 
+					  <div class="panel panel-primary">
+						<!-- <div class="panel-heading">BLACK FRIDAY DEAL</div> -->
+						<div class="panel-body"><img src="<c:url value="/resources/images/img1.jpg" />" class="img-responsive" style="width:100%" alt="Image"></div>
+						<div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+					  </div>
+					</div>
+					<div class="col-sm-4"> 
+					  <div class="panel panel-primary">
+						<!-- <div class="panel-heading">BLACK FRIDAY DEAL</div> -->
+						<div class="panel-body"><img src="<c:url value="/resources/images/img2.jpg" />" class="img-responsive" style="width:100%" alt="Image"></div>
+						<div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+					  </div>
+					</div>
+				  </div>
+				</div><br><br>
 <!-- view ends here -->
 
 	<footer class="container-fluid text-center">
@@ -175,7 +312,12 @@
 						<span style="font: normal normal normal 13px/1.4em raleway,sans-serif;letter-spacing: 0.1em;">123-456-7890</span>
 					</div>
 				</div>
-	</footer>
+				  <!-- <p>Online Store Copyright</p>  
+				  <form class="form-inline">Get deals:
+					<input type="email" class="form-control" size="50" placeholder="Email Address">
+					<button type="button" class="btn btn-danger">Sign Up</button>
+				  </form> -->
+				</footer>
 
 </body>
 <script src="<c:url value="/resources/angular/angular.min.js" />"></script>
@@ -183,5 +325,10 @@
 <script src="<c:url value="/resources/angular/app.js" />"></script>
 <script src="<c:url value="/resources/angular/jquery.min.js" />"></script>
 <script src="<c:url value="/resources/angular/bootstrap.min.js" />"></script>
+
+<%-- <script src="${pageContext.request.contextPath}/views/angular/angular-route.js" />
+<script src="${pageContext.request.contextPath}/views/angular/app.js" />
+<script src="${pageContext.request.contextPath}/views/angular/jquery.min.js" />
+<script src="${pageContext.request.contextPath}/views/angular/bootstrap.min.js" /> --%>
 
 </html>
