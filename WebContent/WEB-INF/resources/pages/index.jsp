@@ -60,7 +60,9 @@
 	<style> 
 	@media (min-width: 767px) {
 		.nav{
-			height:88px;
+			padding-top: 1%;
+			/* height: 11%; */
+			/* height:88px; */
 		}
 		.navbar-nav{
 			margin: 0 auto;
@@ -75,12 +77,17 @@
 		}
 		.navbar{
 			align:center;
+			height: 10%;
 		}		
+		
+		.container{
+			width:75% !important;
+		}
 		
 	}
 	@media (max-width: 767px) {
 		.nav{
-			height:88px;
+			height: 11%;
 		}
 		.navbar-nav{
 			margin: 0 auto;
@@ -96,11 +103,15 @@
 		.navbar-brand{
 			font-size: 16px;
 		}
+		.navbar-toggle{
+			background-color: gray!important;
+		}
 	}
 	.active{
-		 background-color: #333;
+		 background-color: whitesmoke;
+		 color:gray;
 	}
-	 .nav .active a { background:#222222!important; background-color:#222222!important;}
+	 .nav .active a { background:gray!important; background-color: gray!important;color:black;}
 	footer {
       background-color: #333;
       padding: 25px;
@@ -114,7 +125,7 @@
 <body>
 
 	<div class="container-fluid text-center" ng-controller="indexController">
-				<nav class="navbar navbar-inverse navbar-fixed-top" align="center;">
+				<nav class="navbar navbar-inverse navbar-fixed-top" align="center;" style="background-color: white;">
 				  <div class="container" >
 					<div class="navbar-header">
 					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -122,12 +133,12 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>                        
 					  </button>
-					  <a class="navbar-brand visible-xs " style="font: 10px;letter-spacing: 0.1em;">GAJALAKSHMI HANDLOOMS</a></br>
+					  <a class="navbar-brand visible-xs " style="font: 10px;letter-spacing: 0.1em;"><span style="color:#403b37 !important;">GAJALAKSHMI</span> <span style="color: #fa03bb;">HANDLOOMS</span></a></br>
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 					  <ul class="nav navbar-nav">
-					  <li class="visible-sm visible-md visible-lg" style="letter-spacing: 0.3em;"><a class="navbar-brand" >GAJALAKSHMI HANDLOOMS</a> </li>
-						<li class="active" ng-class="{ active: isActive('') }"><a href="<c:url value="/home" />">Home</a></li>
+					  <li class="visible-sm visible-md visible-lg" style="letter-spacing: 0.3em;"><a class="navbar-brand" ><span style="color:#403b37 !important;">GAJALAKSHMI</span> <span style="color: #fa03bb;">HANDLOOMS</span></a> </li>
+						<li ng-class="{ active: isActive('') }"><a href="<c:url value="/home" />" style=" color: gray;" >Home</a></li>
 						<li ng-class="{ active: isActive('Products') }"><a href="<c:url value="/products" />">Products</a></li>
 						<li ng-class="{ active: isActive('Locate') }"><a href="<c:url value="/locate" />">Locate Us</a></li>
 						<li ng-class="{ active: isActive('Contact') }"><a href="<c:url value="/contact" />">Contact Us</a></li>
@@ -234,37 +245,38 @@
 	}
 	
 	
+	
 	</style>
-<div class="shipping "><span  style="letter-spacing:0.3em;"  align="center">SHIPPING WORLDWIDE</span></div>
+<!-- <div class="shipping "><span  style="letter-spacing:0.3em;"  align="center">SHIPPING WORLDWIDE</span></div> -->
 <div class="container-fluid text-center" >
 					
-					<h6 style="letter-spacing: 10.8000001907349px;font-family: times new roman,times,serif;font-size: 36px;"><b>YEAR ROUND</b></h6>
+					<h6 style="letter-spacing: 10.8000001907349px;font-family: times new roman,times,serif;font-size: 30px;"><b>YEAR ROUND</b></h6>
 					<span><hr width="5%" style="background-color: red; height: 1px; border: 0;"></span>
-					<p style="letter-spacing: 5.69999980926514px;font-family: times new roman,times,serif;font-size: 19px;">Must Have Items</p>
+					<p style="letter-spacing: 5.69999980926514px;font-family: times new roman,times,serif;font-size: 19px;"><!-- Must Have Items -->Shipping Worldwide</p>
 					</br>
 				</div>
 
 				<div class="container" align="center">    
 				  <div class="row">
-					<div class="col-sm-4">
+					<div class="col-sm-4 col-md-4">
 					  <div class="panel ">
 						<!-- <div class="panel-heading">BLACK FRIDAY DEAL</div> -->
 						<div class="panel-body img-hover"><img src="<c:url value="/resources/images/img1.jpg" />" class="img-responsive" style="width:100%;" alt="Image"></div>
 						<div class="panel-footer">KASAVU SAREE</div>
 					  </div>
 					</div>
-					<div class="col-sm-4"> 
+					<div class="col-sm-4 col-md-4"> 
 					  <div class="panel">
 						<!-- <div class="panel-heading">BLACK FRIDAY DEAL</div> -->
 						<div class="panel-body"><img src="<c:url value="/resources/images/img2.jpg" />" class="img-responsive" style="width:100%" alt="Image"></div>
 						<div class="panel-footer">DHOTHI</div>
 					  </div>
 					</div>
-					<div class="col-sm-4"> 
+					<div class="col-sm-4 col-md-4"> 
 					  <div class="panel">
 						<!-- <div class="panel-heading">BLACK FRIDAY DEAL</div> -->
 						<div class="panel-body"><img src="<c:url value="/resources/images/img1.jpg" />" class="img-responsive" style="width:100%" alt="Image"></div>
-						<div class="panel-footer">SET DHOTHI</div>
+						<div class="panel-footer">SET MUNDU</div>
 					  </div>
 					</div>
 				  </div>
@@ -272,25 +284,25 @@
 
 				<div class="container" align="center">    
 				  <div class="row">
-					<div class="col-sm-4">
+					<div class="col-sm-4 col-md-4">
 					  <div class="panel panel-primary">
 						<!-- <div class="panel-heading">BLACK FRIDAY DEAL</div> -->
 						<div class="panel-body"><img src="<c:url value="/resources/images/img2.jpg" />" class="img-responsive" style="width:100%" alt="Image"></div>
-						<div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+						<div class="panel-footer">TISSUE SAREE</div>
 					  </div>
 					</div>
-					<div class="col-sm-4"> 
+					<div class="col-sm-4 col-md-4"> 
 					  <div class="panel panel-primary">
 						<!-- <div class="panel-heading">BLACK FRIDAY DEAL</div> -->
 						<div class="panel-body"><img src="<c:url value="/resources/images/img1.jpg" />" class="img-responsive" style="width:100%" alt="Image"></div>
-						<div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+						<div class="panel-footer">MURAL PAINTED</div>
 					  </div>
 					</div>
-					<div class="col-sm-4"> 
+					<div class="col-sm-4 col-md-4"> 
 					  <div class="panel panel-primary">
 						<!-- <div class="panel-heading">BLACK FRIDAY DEAL</div> -->
 						<div class="panel-body"><img src="<c:url value="/resources/images/img2.jpg" />" class="img-responsive" style="width:100%" alt="Image"></div>
-						<div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+						<div class="panel-footer">COTTON SAREES</div>
 					  </div>
 					</div>
 				  </div>

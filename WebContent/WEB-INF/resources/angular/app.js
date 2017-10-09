@@ -41,6 +41,21 @@ var app=angular.module('GLH',['ngRoute']);
 	app.controller('locateController',function($scope){
 		console.log("location controller");
 	});
-	app.controller('contactController',function($scope){
+	app.controller('contactController',function($scope,$http){
 		console.log("contact controller");
+		$scope.sendEmail=function(contact){
+			console.log(contact);
+			// Simple GET request example:
+			$http({
+			  method: 'POST',
+			  url: '/sendMail',
+			  data: {contact:contact}
+			}).then(function successCallback(response) {
+			    // this callback will be called asynchronously
+			    // when the response is available
+			  }, function errorCallback(response) {
+			    // called asynchronously if an error occurs
+			    // or server returns response with an error status.
+			  });
+		}
 	});

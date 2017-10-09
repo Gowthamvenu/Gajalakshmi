@@ -60,7 +60,9 @@
 	<style> 
 	@media (min-width: 767px) {
 		.nav{
-			height:88px;
+			padding-top: 1%;
+			/* height: 11%; */
+			/* height:88px; */
 		}
 		.navbar-nav{
 			margin: 0 auto;
@@ -75,12 +77,17 @@
 		}
 		.navbar{
 			align:center;
+			height: 10%;
 		}		
+		
+		.container{
+			width:75% !important;
+		}
 		
 	}
 	@media (max-width: 767px) {
 		.nav{
-			height:88px;
+			height: 11%;
 		}
 		.navbar-nav{
 			margin: 0 auto;
@@ -98,9 +105,10 @@
 		}
 	}
 	.active{
-		 background-color: #333;
+		 background-color: whitesmoke;
+		 color:gray;
 	}
-	 .nav .active a { background:#222222!important; background-color:#222222!important;}
+	 .nav .active a { background:whitesmoke!important; background-color: whitesmoke!important;color:black;}
 	footer {
       background-color: #333;
       padding: 25px;
@@ -114,7 +122,7 @@
 <body>
 
 	<div class="container-fluid text-center" ng-controller="locateController">
-				<nav class="navbar navbar-inverse navbar-fixed-top" align="center;">
+				<nav class="navbar navbar-inverse navbar-fixed-top" align="center;" style="background-color: white;">
 				  <div class="container" >
 					<div class="navbar-header">
 					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -122,12 +130,12 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>                        
 					  </button>
-					  <a class="navbar-brand visible-xs " style="font: 10px;letter-spacing: 0.1em;">GAJALAKSHMI HANDLOOMS</a></br>
+					  <a class="navbar-brand visible-xs " style="font: 10px;letter-spacing: 0.1em;"><span style="color:#403b37 !important;">GAJALAKSHMI</span> <span style="color: #fa03bb;">HANDLOOMS</span></a></br>
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 					  <ul class="nav navbar-nav">
-					  <li class="visible-sm visible-md visible-lg" style="letter-spacing: 0.3em;"><a class="navbar-brand" >GAJALAKSHMI HANDLOOMS</a> </li>
-						<li class="active" ng-class="{ active: isActive('') }"><a href="<c:url value="/home" />">Home</a></li>
+					  <li class="visible-sm visible-md visible-lg" style="letter-spacing: 0.3em;"><a class="navbar-brand" ><span style="color:#403b37 !important;">GAJALAKSHMI</span> <span style="color: #fa03bb;">HANDLOOMS</span></a> </li>
+						<li ng-class="{ active: isActive('Home') }"><a href="<c:url value="/home" />" style=" color: gray;" >Home</a></li>
 						<li ng-class="{ active: isActive('Products') }"><a href="<c:url value="/products" />">Products</a></li>
 						<li ng-class="{ active: isActive('Locate') }"><a href="<c:url value="/locate" />">Locate Us</a></li>
 						<li ng-class="{ active: isActive('Contact') }"><a href="<c:url value="/contact" />">Contact Us</a></li>
