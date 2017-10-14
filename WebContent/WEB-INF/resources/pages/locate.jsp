@@ -85,6 +85,25 @@
 		}
 		
 	}
+	@media(max-width:427px){
+	.navbar-brand br{
+			display:block !important;
+		}
+		.navbar-brand{
+			font-size: 16px;
+			padding: 0px 15px;
+		}
+		.navbar-toggle{
+			background-color: gray!important;
+			padding: 9px 10px;
+   		    margin-top: 17px;
+		}
+	}
+	@media (min-width: 427px) {
+	.navbar-brand br{
+			display:none !important;
+		}
+	}
 	@media (max-width: 767px) {
 		.nav{
 			height: 11%;
@@ -102,13 +121,14 @@
 		}	
 		.navbar-brand{
 			font-size: 16px;
+			padding: 0px 15px;
 		}
 	}
 	.active{
 		 background-color: whitesmoke;
 		 color:gray;
 	}
-	 .nav .active a { background:whitesmoke!important; background-color: whitesmoke!important;color:black;}
+	 .nav .active a { background:gray!important; background-color: gray!important;color:black;}
 	footer {
       background-color: #333;
       padding: 25px;
@@ -130,11 +150,11 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>                        
 					  </button>
-					  <a class="navbar-brand visible-xs " style="font: 10px;letter-spacing: 0.1em;"><span style="color:#403b37 !important;">GAJALAKSHMI</span> <span style="color: #fa03bb;">HANDLOOMS</span></a></br>
+					  <a class="navbar-brand visible-md  visible-lg" style="font: 10px;letter-spacing: 0.1em;padding-top:25px;"><span style="color:#403b37 !important;">GAJALAKSHMI</span> <span style="color: #fa03bb;">HANDLOOMS</span></a></br>
+					  <a class="navbar-brand visible-xs" style="letter-spacing: 0.3em;"><span style="color:#403b37 !important;">GAJALAKSHMI</span><br> <span style="color: #fa03bb;">HANDLOOMS</span></a>
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 					  <ul class="nav navbar-nav">
-					  <li class="visible-sm visible-md visible-lg" style="letter-spacing: 0.3em;"><a class="navbar-brand" ><span style="color:#403b37 !important;">GAJALAKSHMI</span> <span style="color: #fa03bb;">HANDLOOMS</span></a> </li>
 						<li ng-class="{ active: isActive('Home') }"><a href="<c:url value="/home" />" style=" color: gray;" >Home</a></li>
 						<li ng-class="{ active: isActive('Products') }"><a href="<c:url value="/products" />">Products</a></li>
 						<li ng-class="{ active: isActive('Locate') }"><a href="<c:url value="/locate" />">Locate Us</a></li>
